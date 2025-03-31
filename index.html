@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mi Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/6be6f14cdc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Menú -->
+    <nav class="bg-teal-600 px-8 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-white text-2xl font-semibold">Mi Proyecto
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-8">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-extrabold text-center text-gray-900 mb-6">
+          Formulario de Contacto
+        </h1>
+
+        <div class="max-w-lg mx-auto">
+          <form class="bg-white p-8 shadow-lg rounded-lg space-y-6">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm font-bold text-gray-700" for="nya"
+                  >Nombres y Apellidos</label
+                >
+                <input
+                  class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                  type="text"
+                  id="nya"
+                  placeholder="Yaz Alvarado"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-gray-700" for="email"
+                  >Correo Electrónico</label
+                >
+                <input
+                  class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                  type="email"
+                  id="email"
+                  placeholder="correo@correo.com"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-gray-700" for="asunto"
+                >Asunto</label
+              >
+              <input
+                class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                type="text"
+                id="asunto"
+                placeholder="Venta de productos"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-gray-700" for="mensaje"
+                >Mensaje</label
+              >
+              <textarea
+                class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                id="mensaje"
+                rows="4"
+                placeholder="Escribe tu mensaje..."
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label
+                class="block text-sm font-bold text-gray-700"
+                for="telefono"
+                >Teléfono</label
+              >
+              <input
+                class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                type="tel"
+                id="telefono"
+                placeholder="555-123-4567"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-gray-700" for="fecha"
+                >Fecha de Contacto</label
+              >
+              <input
+                class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                type="date"
+                id="fecha"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-sm font-bold text-gray-700"
+                for="preferencia"
+                >Preferencia de Contacto</label
+              >
+              <select
+                class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                id="preferencia"
+                required
+              >
+                <option value="email">Correo Electrónico</option>
+                <option value="telefono">Teléfono</option>
+              </select>
+            </div>
+            <div>
+              <label
+                class="block text-sm font-bold text-gray-700"
+                for="mensaje_adicional"
+                >¿Algo más?</label
+              >
+              <textarea
+                class="w-full mt-1 p-3 border rounded-md shadow-sm focus:ring-2 focus:ring-teal-500"
+                id="mensaje_adicional"
+                rows="3"
+                placeholder="Cualquier otro detalle que quieras agregar..."
+              ></textarea>
+            </div>
+
+            <div class="flex justify-between">
+              <button
+                class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Enviar
+              </button>
+              <button
+                class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline"
+                type="reset"
+              >
+                Limpiar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center">
+      <p class="text-gray-700">
+        © Yaz Alvarado
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        . Todos los derechos reservados.
+      </p>
+    </footer>
+    </div>
+  </body>
+</html>
